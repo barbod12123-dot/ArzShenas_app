@@ -1,0 +1,98 @@
+package com.sirbarbod.arzshenas.data
+
+// -----------------------------------------------------------------------
+// متن‌های دوزبانه‌ی رابط کاربری (fa/en) - منطبق با نسخه‌ی اصلی
+// -----------------------------------------------------------------------
+object Translations {
+
+    private val fa = mapOf(
+        "app_title" to "ارزش‌شناس",
+        "tab_crypto" to "کریپتو",
+        "tab_gold" to "طلا",
+        "tab_currency" to "ارزها",
+        "tab_settings" to "تنظیمات",
+        "tab_home" to "خانه",
+        "search_hint" to "جست‌وجو...",
+        "loading" to "در حال دریافت اطلاعات...",
+        "offline_notice" to "اتصال اینترنت برقرار نیست — آخرین اطلاعات ذخیره‌شده نمایش داده می‌شود",
+        "last_update" to "آخرین به‌روزرسانی",
+        "refresh" to "به‌روزرسانی",
+        "market_cap" to "ارزش بازار",
+        "change_24h" to "تغییر ۲۴ ساعته",
+        "settings_title" to "تنظیمات",
+        "language" to "زبان برنامه",
+        "theme" to "پوسته برنامه",
+        "theme_light" to "روشن",
+        "theme_dark" to "تاریک",
+        "base_currency" to "واحد پول پایه",
+        "toman" to "تومان",
+        "dollar" to "دلار",
+        "about" to "درباره برنامه",
+        "about_text" to "ارزش‌شناس، دستیار همراه شما برای رصد لحظه‌ای بازار طلا، ارز و ارزهای دیجیتال. ساخته شده توسط SIRBARBOD",
+        "version" to "نسخه",
+        "no_results" to "نتیجه‌ای یافت نشد",
+        "home_summary" to "خلاصه بازار",
+        "home_gold" to "طلای ۱۸ عیار",
+        "home_dollar" to "دلار آزاد",
+        "home_bitcoin" to "بیت‌کوین",
+        "view_all" to "مشاهده همه",
+        "close" to "بستن",
+        "notif_title" to "اعلان تغییر قیمت",
+        "world_currencies" to "ارزهای جهانی",
+        "gold_and_coin" to "طلا و سکه",
+        "cryptocurrencies" to "ارزهای دیجیتال برتر",
+        "rank" to "رتبه",
+        "unit_toman" to "تومان",
+        "unit_usd" to "دلار",
+        "per_gram" to "هر گرم",
+        "pull_refresh_hint" to "برای به‌روزرسانی، پایین بکشید",
+    )
+
+    private val en = mapOf(
+        "app_title" to "Arzshenas",
+        "tab_crypto" to "Crypto",
+        "tab_gold" to "Gold",
+        "tab_currency" to "Currencies",
+        "tab_settings" to "Settings",
+        "tab_home" to "Home",
+        "search_hint" to "Search...",
+        "loading" to "Fetching latest data...",
+        "offline_notice" to "No internet connection — showing last saved data",
+        "last_update" to "Last update",
+        "refresh" to "Refresh",
+        "market_cap" to "Market Cap",
+        "change_24h" to "24h Change",
+        "settings_title" to "Settings",
+        "language" to "App Language",
+        "theme" to "App Theme",
+        "theme_light" to "Light",
+        "theme_dark" to "Dark",
+        "base_currency" to "Base Currency",
+        "toman" to "Toman",
+        "dollar" to "Dollar",
+        "about" to "About",
+        "about_text" to "Arzshenas, your companion for real-time monitoring of gold, currency, and cryptocurrency markets. Developed by SIRBARBOD.",
+        "version" to "Version",
+        "no_results" to "No results found",
+        "home_summary" to "Market Summary",
+        "home_gold" to "18K Gold",
+        "home_dollar" to "USD (Free Market)",
+        "home_bitcoin" to "Bitcoin",
+        "view_all" to "View All",
+        "close" to "Close",
+        "notif_title" to "Price Change Alert",
+        "world_currencies" to "World Currencies",
+        "gold_and_coin" to "Gold & Coins",
+        "cryptocurrencies" to "Top Cryptocurrencies",
+        "rank" to "Rank",
+        "unit_toman" to "Toman",
+        "unit_usd" to "USD",
+        "per_gram" to "per gram",
+        "pull_refresh_hint" to "Pull down to refresh",
+    )
+
+    fun t(lang: String, key: String): String {
+        val table = if (lang == "en") en else fa
+        return table[key] ?: key
+    }
+}

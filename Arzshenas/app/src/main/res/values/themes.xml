@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.Arzshenas" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#1A1A1A</item>
+        <item name="android:windowBackground">#1A1A1A</item>
+    </style>
+</resources>
